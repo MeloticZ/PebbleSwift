@@ -7,23 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6C74D5762EB43E1C00A9D818 /* 223-931-android-fun.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6C74D5752EB43E1C00A9D818 /* 223-931-android-fun.riv */; };
+		6C74D5942EB4536F00A9D818 /* android.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6C74D5912EB4536F00A9D818 /* android.riv */; };
+		6C74D5952EB4536F00A9D818 /* look.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6C74D5922EB4536F00A9D818 /* look.riv */; };
+		6C74D5962EB4536F00A9D818 /* pebble_loop.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6C74D5932EB4536F00A9D818 /* pebble_loop.riv */; };
 		6C9B94F62EB434DE00ED91C8 /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 6C9B94F52EB434DE00ED91C8 /* RiveRuntime */; };
-		6C9B95002EB437E100ED91C8 /* pebble.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6C9B94FF2EB437E100ED91C8 /* pebble.riv */; };
-		6C9B95042EB4390300ED91C8 /* Bear.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6C9B95022EB4390300ED91C8 /* Bear.riv */; };
-		6C9B95052EB4390300ED91C8 /* clean_icon_set.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6C9B95032EB4390300ED91C8 /* clean_icon_set.riv */; };
-		6C9B95062EB4390300ED91C8 /* basketball.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6C9B95012EB4390300ED91C8 /* basketball.riv */; };
-		6C9B95082EB43C3700ED91C8 /* android.riv in Resources */ = {isa = PBXBuildFile; fileRef = 6C9B95072EB43C3700ED91C8 /* android.riv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6C74D5752EB43E1C00A9D818 /* 223-931-android-fun.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "223-931-android-fun.riv"; sourceTree = "<group>"; };
+		6C74D5912EB4536F00A9D818 /* android.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = android.riv; sourceTree = "<group>"; };
+		6C74D5922EB4536F00A9D818 /* look.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = look.riv; sourceTree = "<group>"; };
+		6C74D5932EB4536F00A9D818 /* pebble_loop.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = pebble_loop.riv; sourceTree = "<group>"; };
 		6C9B94E62EB434A100ED91C8 /* PebbleAaronIsARock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PebbleAaronIsARock.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6C9B94FF2EB437E100ED91C8 /* pebble.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = pebble.riv; sourceTree = "<group>"; };
-		6C9B95012EB4390300ED91C8 /* basketball.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = basketball.riv; sourceTree = "<group>"; };
-		6C9B95022EB4390300ED91C8 /* Bear.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = Bear.riv; sourceTree = "<group>"; };
-		6C9B95032EB4390300ED91C8 /* clean_icon_set.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = clean_icon_set.riv; sourceTree = "<group>"; };
-		6C9B95072EB43C3700ED91C8 /* android.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = android.riv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -66,12 +60,9 @@
 		6C9B94FE2EB437C400ED91C8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				6C74D5752EB43E1C00A9D818 /* 223-931-android-fun.riv */,
-				6C9B95012EB4390300ED91C8 /* basketball.riv */,
-				6C9B95072EB43C3700ED91C8 /* android.riv */,
-				6C9B95022EB4390300ED91C8 /* Bear.riv */,
-				6C9B95032EB4390300ED91C8 /* clean_icon_set.riv */,
-				6C9B94FF2EB437E100ED91C8 /* pebble.riv */,
+				6C74D5912EB4536F00A9D818 /* android.riv */,
+				6C74D5922EB4536F00A9D818 /* look.riv */,
+				6C74D5932EB4536F00A9D818 /* pebble_loop.riv */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -144,12 +135,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C9B95042EB4390300ED91C8 /* Bear.riv in Resources */,
-				6C9B95052EB4390300ED91C8 /* clean_icon_set.riv in Resources */,
-				6C74D5762EB43E1C00A9D818 /* 223-931-android-fun.riv in Resources */,
-				6C9B95082EB43C3700ED91C8 /* android.riv in Resources */,
-				6C9B95062EB4390300ED91C8 /* basketball.riv in Resources */,
-				6C9B95002EB437E100ED91C8 /* pebble.riv in Resources */,
+				6C74D5942EB4536F00A9D818 /* android.riv in Resources */,
+				6C74D5952EB4536F00A9D818 /* look.riv in Resources */,
+				6C74D5962EB4536F00A9D818 /* pebble_loop.riv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

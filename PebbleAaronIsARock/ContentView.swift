@@ -3,13 +3,13 @@ import RiveRuntime
 
 // MARK: - Main Content View
 struct ContentView: View {
-    @StateObject private var basketballVM = RiveViewModel(fileName: "pebble")
+    @StateObject private var basketballVM = RiveViewModel(fileName: "pebble_loop")
     @StateObject private var iconVM = RiveViewModel(
-        fileName: "223-931-android-fun",
+        fileName: "android",
         stateMachineName: "State Machine 1",
         artboardName: "New Artboard",
     )
-    @StateObject private var bearVM = RiveViewModel(fileName: "Bear")
+    @StateObject private var bearVM = RiveViewModel(fileName: "look")
     
     @State private var selectedTab = 0
     
@@ -62,14 +62,14 @@ struct BasicAnimationView: View {
             
             // Rive Animation
             viewModel.view()
-                .frame(width: 300, height: 300)
+                .frame(width: 200, height: 200)
                 .background(
                     RoundedRectangle(cornerRadius: 20)
                         .fill(Color.gray.opacity(0.1))
                 )
             
             VStack(alignment: .leading, spacing: 12) {
-                InfoRow(label: "File", value: "basketball.riv")
+                InfoRow(label: "File", value: "pebble_loop.riv")
                 InfoRow(label: "Type", value: "Simple Animation")
                 InfoRow(label: "Code", value: "~5 lines")
             }
@@ -97,7 +97,7 @@ struct InteractiveAnimationView: View {
                 .font(.title)
                 .fontWeight(.bold)
             
-            Text("Tap the animation to trigger state transitions and see the state machine in action.")
+            Text("Tap the buttons to trigger state transitions and see the state machine in action.")
                 .font(.body)
                 .foregroundColor(.secondary)
                 .multilineTextAlignment(.center)
@@ -110,22 +110,32 @@ struct InteractiveAnimationView: View {
                     RoundedRectangle(cornerRadius: 20)
                         .fill(Color.gray.opacity(0.1))
                 )
-//                .onTapGesture {
-                    // Trigger state machine input
-//                    viewModel.triggerInput("Trigger 1")
-//                    tapCount += 1
-//                    viewModel.triggerInput("start")
-//                }
+            //                .onTapGesture {
+            // Trigger state machine input
+            //                    viewModel.triggerInput("Trigger 1")
+            //                    tapCount += 1
+            //                    viewModel.triggerInput("start")
+            //                }
             
+            HStack {
+                
                 Button("Start") {
-                    viewModel.triggerInput("start", path: "New Artboard")
+                    viewModel.setInput("start", value: true)
                 }
+                
+                Button("Jump") {
+                    viewModel.triggerInput("Jump")
+                }
+                
+                Button("Out") {
+                    viewModel.setInput("Out", value: true)
+                }
+            }
             
             VStack(alignment: .leading, spacing: 12) {
-                InfoRow(label: "File", value: "clean_icon_set.riv")
+                InfoRow(label: "File", value: "android.riv")
                 InfoRow(label: "Type", value: "State Machine")
-                InfoRow(label: "Input", value: "Trigger on Tap")
-                InfoRow(label: "States", value: "Multiple Icon States")
+                InfoRow(label: "Input", value: "Trigger on Function Call")
             }
             .padding()
             .background(
@@ -159,7 +169,7 @@ struct CharacterAnimationView: View {
             
             // Rive Animation
             viewModel.view()
-                .frame(width: 300, height: 300)
+                .frame(width: 250, height: 250)
                 .background(
                     RoundedRectangle(cornerRadius: 20)
                         .fill(Color.gray.opacity(0.1))
@@ -206,10 +216,9 @@ struct CharacterAnimationView: View {
             }
             
             VStack(alignment: .leading, spacing: 12) {
-                InfoRow(label: "File", value: "Bear.riv")
+                InfoRow(label: "File", value: "look.riv")
                 InfoRow(label: "Type", value: "Character Animation")
-                InfoRow(label: "Size", value: "~35KB")
-                InfoRow(label: "Features", value: "Multiple States")
+                InfoRow(label: "Features", value: "Multiple States & Hover")
             }
             .padding()
             .background(
